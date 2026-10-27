@@ -30,7 +30,6 @@ requirements:
     - hatchling >=1.12.2
     - hatch-vcs >=0.2.0
   run:
-    - boltons >=23.0.0
     - frozendict >=2.4.2
     - packaging >=26.3
     - pycosat >=0.6.3
@@ -40,7 +39,7 @@ requirements:
     # Technically a run dependency (imported at runtime), but conda already
     # bundles conda-pycosat-solver by default, so a hard `run` dependency
     # here would create a dependency cycle that complicates migrations.
-    - conda >=23.7.3
+    - conda >=26.5
 
 tests:
   # rattler-build doesn't support `requirements` in `python` block,
